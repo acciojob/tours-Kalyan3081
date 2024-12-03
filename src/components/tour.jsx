@@ -13,6 +13,7 @@ const Tour = ({ id, name, info, image, price, removeTour }) => {
                     {showMore ? info : `${info.substring(0, 200)}...`}
                     <button
                         className="toggle-btn"
+                        id={`see-more-${id}`}
                         onClick={() => setShowMore(!showMore)}
                     >
                         {showMore ? 'See less' : 'Show more'}
